@@ -1,8 +1,5 @@
 <h1> Pneumonia detection in chest X-ray images using CNNs and Transfer learning </h1>
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mariostrbac/pneumonia-detection-in-chest-xrays/blob/main/notebooks/xray_pneumonia_detection.ipynb)
-
-
 The purpose of this project is to examine a convolutional neural network model on the image classification problem of pneumonia detection in chest X-ray images. For this reason, the deep learning model VGG-19 is trained and tested on the Chest X-ray Images dataset. Furthermore, transfer learning is applied to speed up the training and further improve the performance.
 
 The problem includes detecting whether or not pneumonia shows up on input X-ray images, i.e. binary classification problem, with the goal of providing an additional help in the medical diagnosis procedures. To implement the solution, multiple different technologies and tools are used, mainly including Python and Keras.
@@ -67,13 +64,10 @@ The training and validation sets are pre-defined and contain 5216 and 624 images
 
 <figure>
   <p align="center">
-    <img src="imgs/class_distribution.png"/>
-    <figcaption style="text-align:center">
-      <b>Figure 1.</b> Class distribution of training and validation sets.
-    </figcaption>
+    <img align="middle" src="imgs/class_distribution.png"/> <br>
+    <b>Figure 1.</b> Class distribution of training and validation sets.
   </p>
 </figure>
-
 
 However, to lessen the effects of classification bias in the imbalanced data, class weights are used. The weights can be calculated with the following expression: 
 
@@ -97,19 +91,15 @@ Images in the dataset are greyscale with different dimensions, therefore resizin
 
 <figure>
   <p align="center">
-    <img src="imgs/type_distribution.png"/>
-    <figcaption style="text-align:center">
-      <b>Figure 2.</b> Distribution of different image types in the datasets.
-    </figcaption>
+    <img src="imgs/type_distribution.png"/> <br>
+    <b>Figure 2.</b> Distribution of different image types in the datasets.
   </p>
 </figure>
 
 <figure>
   <p align="center">
-    <img src="imgs/different_types.png" width=500/>
-    <figcaption style="text-align:center">
-      <b>Figure 3.</b> Three types of images in the datasets.
-    </figcaption>
+    <img src="imgs/different_types.png" width=500/> <br>
+    <b>Figure 3.</b> Three types of images in the datasets.
   </p>
 </figure>
 
@@ -117,10 +107,8 @@ The  chest  x-ray images  depicted  in **Figure 3.** and **Figure 4.**  are  of 
 
 <figure>
   <p align="center">
-    <img src="imgs/sample_batch.png" width=500 />
-    <figcaption style="text-align:center">
-      <b>Figure 4.</b> Labeled chest X-ray images in the dataset.
-    </figcaption>
+    <img src="imgs/sample_batch.png" width=500 /> <br>
+    <b>Figure 4.</b> Labeled chest X-ray images in the dataset.
   </p>
 </figure>
 
@@ -134,10 +122,8 @@ The learning process of neural networks includes gradually building up abstracti
 
 <figure>
   <p align="center">
-    <img src="imgs/feature_visualization.png"/>
-    <figcaption style="text-align:center">
-      <b>Figure 5.</b> Feature visualisation in neural networks [4].
-    </figcaption>
+    <img src="imgs/feature_visualization.png"/> <br>
+    <b>Figure 5.</b> Feature visualisation in neural networks [4].
   </p>
 </figure>
 
@@ -151,10 +137,8 @@ The transfer learning workflow applied in this project, and generally the most c
 
 <figure>
   <p align="center">
-    <img src="imgs/transfer_leraning.png" width=500 />
-    <figcaption style="text-align:center">
-      <b>Figure 6.</b> The transfer learning approach applied in this project [5].
-    </figcaption>
+    <img src="imgs/transfer_leraning.png" width=500 /> <br>
+    <b>Figure 6.</b> The transfer learning approach applied in this project [5].
   </p>
 </figure>
 
@@ -165,10 +149,8 @@ VGG-19 is a convolutional neural network that is 19 layers deep. In particular, 
 
 <figure>
   <p align="center">
-    <img src="imgs/VGG_19_model.jpg" width=500 />
-    <figcaption style="text-align:center">
-      <b>Figure 7.</b> Illustration of the network architecture of VGG-19 model [1].
-    </figcaption>
+    <img src="imgs/VGG_19_model.jpg" width=500 /> <br>
+    <b>Figure 7.</b> Illustration of the network architecture of VGG-19 model [1].
   </p>
 </figure>
 
@@ -332,10 +314,8 @@ The another metric used in the model evaluation is loss, in particular, the bina
 
 <figure>
   <p align="center">
-    <img src="imgs/acc_loss_graphs.png"/>
-    <figcaption style="text-align:center">
-      <b>Figure 8.</b> Accuracy and loss graphs for training and validation sets.
-    </figcaption>
+    <img src="imgs/acc_loss_graphs.png"/> <br>
+    <b>Figure 8.</b> Accuracy and loss graphs for training and validation sets.
   </p>
 </figure>
 
@@ -343,10 +323,8 @@ As can be seen in **Figure 8.**, accuracy and loss values are changing quite sim
 
 <figure>
   <p align="center">
-    <img src="imgs/confusion_matrices.png"/>
-    <figcaption style="text-align:center">
-      <b>Figure 9.</b> Normalized confusion matrix and confusion matrix without normalization.
-    </figcaption>
+    <img src="imgs/confusion_matrices.png"/> <br>
+    <b>Figure 9.</b> Normalized confusion matrix and confusion matrix without normalization.
   </p>
 </figure>
 
@@ -357,10 +335,8 @@ In the same time, the lower precision percentage indicates a certain bias toward
 
 <figure>
   <p align="center">
-    <img src="imgs/classifcation_report.png" width=500/>
-    <figcaption style="text-align:center">
-      <b>Figure 10.</b> Classification report.
-    </figcaption>
+    <img src="imgs/classifcation_report.png" width=500/> <br>
+    <b>Figure 10.</b> Classification report.
   </p>
 </figure>
 
@@ -370,10 +346,8 @@ And finally, **Figure 11.** shows which are the most inaccurately classified sam
 
 <figure>
   <p align="center">
-    <img src="imgs/top_losses.png" width=500/>
-    <figcaption style="text-align:center">
-      <b>Figure 11.</b> Nine X-ray images with the top losses from the validation set.
-    </figcaption>
+    <img src="imgs/top_losses.png" width=500/> <br>
+    <b>Figure 11.</b> Nine X-ray images with the top losses from the validation set.
   </p>
 </figure>
 

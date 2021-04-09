@@ -95,7 +95,7 @@ Images in the dataset are greyscale with different dimensions, therefore resizin
 
 <figure>
   <p align="center">
-    <img src="imgs/different_types.png" width=500/> <br>
+    <img src="imgs/different_types.png" width=630/> <br>
     <b>Figure 3.</b> Three types of images in the datasets.
   </p>
 </figure>
@@ -104,7 +104,7 @@ The  chest  X-ray images  shown  in **Figure 3.** and **Figure 4.**  are  of  pa
 
 <figure>
   <p align="center">
-    <img src="imgs/sample_batch.png" width=500 /> <br>
+    <img src="imgs/sample_batch.png" width=630 /> <br>
     <b>Figure 4.</b> Labeled chest X-ray images from the dataset.
   </p>
 </figure>
@@ -116,7 +116,7 @@ VGG-19 is a convolutional neural network that is 19 layers deep, containing 16 c
 
 <figure>
   <p align="center">
-    <img src="imgs/VGG_19_model.jpg" width=500 /> <br>
+    <img src="imgs/VGG_19_model.jpg" width=710 /> <br>
     <b>Figure 5.</b> Illustration of the network architecture of VGG-19 model [1].
   </p>
 </figure>
@@ -146,7 +146,7 @@ The transfer learning workflow applied in this project, and generally the most c
 
 <figure>
   <p align="center">
-    <img src="imgs/transfer_leraning.png" width=500 /> <br>
+    <img src="imgs/transfer_leraning.png" width=745 /> <br>
     <b>Figure 7.</b> The transfer learning approach applied in the project [5].
   </p>
 </figure>
@@ -344,7 +344,7 @@ At the same time, the slightly lower precision indicates a certain bias towards 
 
 <figure>
   <p align="center">
-    <img src="imgs/classifcation_report.png" width=500/> <br>
+    <img src="imgs/classifcation_report.png"/> <br>
     <b>Figure 10.</b> Classification report.
   </p>
 </figure>
@@ -355,7 +355,7 @@ And finally, **Figure 11.** shows the most inaccurately classified images in the
 
 <figure>
   <p align="center">
-    <img src="imgs/top_losses.png" width=500/> <br>
+    <img src="imgs/top_losses.png" width=710/> <br>
     <b>Figure 11.</b> Nine X-ray images with the top losses from the test set.
   </p>
 </figure>
